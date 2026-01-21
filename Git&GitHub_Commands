@@ -29,9 +29,10 @@ git init
 # Command for making remote connection for our application "need to provide GitHub URL in the command" (GitHub-> Repo-> code (right side)-> Local-> HTTPS-> copy the URL)
 git remote add origin https://github.com/Rohith-Ravula/Git_Python.git 
 
+# commands from now on should be given in VScode terminal
+Navigate to VScode editor Top-> Terminal-> New Terminal (Git&GitHub)
 # To make a Pull Request 'PR'
 # (We can reflect the things in GitHub to VScode editor using PR)
-Navigate to VScode editor Top-> Terminal-> New Terminal (Git&GitHub)
 # Command to make a PR from GitHub to VScode editor (commands should be given in VScode terminal)
 git pull origin main
 
@@ -55,15 +56,19 @@ We will be asking to authenticate and once we login to GitHub we can see total 3
 git checkout -b "branch name"
 
 # Command to switch between the branches
-git checkout "branch name"
+git checkout "branch which we need to open now"
 
 Note: we can also push files from one branch to another directly from GitHub itself, by using the Pull Request(PR) option present in the GitHub.
 eg- a Newfile.txt has been added to a Newbranch, which is not present in main branch. So to add Newfile.txt from NewBranch to main branch. follow below steps
--> Right side top-> Compare & Pull Request
+-> Right side top-> "Compare & Pull Request"
 -> We can see merge is happening b/w NewBranch and main
 -> Give the commit name and make any comments in description
--> click on Submit Pull Request
- -> It will check if there are any conflicts with base branch-> If no conflicts-> click on Merge Pull Request
- -> Give commit message & Extended description if needed-> Click on Confirm Merge
+-> click on "Create Pull Request"
+ -> It will check if there are any conflicts with base branch-> If no conflicts-> click on "Merge Pull Request"
+ -> Give commit message & Extended description if needed-> Click on "Confirm Merge"
  -> we can see Pull Request successfully merged and closed
  -> Click on Code(Left side Top) to see all the branches. Now the Newfile.txt will be present in main branch as well.
+
+ # Command to clone the Git to new folder. (create a new folder in File Explorer, open cmd from the new folder location. Run the below command from cmd)
+git clone https://github.com/Rohith-Ravula/Git_Python.git 
+-> A new folder opens with the GitHub Repository name (Git_Python). All the files and folders will be present inside that new folder within Test folder
