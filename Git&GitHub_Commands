@@ -1,0 +1,50 @@
+Git is required for keeping track of version control
+Git is distributed on cloud
+Git is used for collaboration. We can write our code and make it accessible for public
+Git is used for tracking changes in the application code
+Recovery of the code is done as earliest as possible.(if a new version of the code is having some bugs and not functioning well, we can then backout it to previous version as early as possible)
+
+Download Git for windows-> https://git-scm.com/install/windows
+
+Create a GitHub account-> github.com -> give signup using a email and provide a password. we also require a username should be unique
+
+Create a new Repositiory- unique name. Make GitHub Repo as public
+Ensure the Readme file is present
+Readme file is a file where we can write a long description for our code-> Readme files tell us about the fuctionality of our program
+
+To make connection to from GitHub to VScode
+Go to folder where Git&GitHub is present in our File Explorer and open cmd from that location
+
+Commands for First time use
+# command to configure our GitHub into our system.   'Paste the below commands in cmd'
+git config --global user.name "Rohith-Ravula"  ("Note: Rohith-Ravula is my GitHub username")
+# configure email ID 
+git config --global user.email "ravularohit45@gmail.com"
+# paste the below command for color automatic suggestions
+git config --global color.ui auto
+
+Mandatory Commands
+# Command for initializing GitHub
+git init
+# Command for making remote connection for our application "need to provide GitHub URL in the command" (GitHub-> Repo-> code (right side)-> Local-> HTTPS-> copy the URL)
+git remote add origin https://github.com/Rohith-Ravula/Git_Python.git 
+
+# To make a Pull Request 'PR'
+# (We can reflect the things in GitHub to VScode editor using PR)
+Navigate to VScode editor Top-> Terminal-> New Terminal (Git&GitHub)
+# Command to make a PR from GitHub to VScode editor (commands should be given in VScode terminal)
+git pull origin main
+
+# To make a push requests
+# We can move the files from VScode to GitHub
+# Command to know the current status of our Git. "We can see untracked files"
+git status 
+# To add the untracked files in VScode to GitHub
+git add .
+# check the status of Git again
+git status
+# command to commit the files
+git commit -m "commit message"
+
+# command to push the changes
+git push
