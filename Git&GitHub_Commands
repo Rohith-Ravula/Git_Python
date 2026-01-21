@@ -54,7 +54,16 @@ We will be asking to authenticate and once we login to GitHub we can see total 3
 # Command to create a new branch
 git checkout -b "branch name"
 
-# Command to swtich between the branches
+# Command to switch between the branches
 git checkout "branch name"
 
 Note: we can also push files from one branch to another directly from GitHub itself, by using the Pull Request(PR) option present in the GitHub.
+eg- a Newfile.txt has been added to a Newbranch, which is not present in main branch. So to add Newfile.txt from NewBranch to main branch. follow below steps
+-> Right side top-> Compare & Pull Request
+-> We can see merge is happening b/w NewBranch and main
+-> Give the commit name and make any comments in description
+-> click on Submit Pull Request
+ -> It will check if there are any conflicts with base branch-> If no conflicts-> click on Merge Pull Request
+ -> Give commit message & Extended description if needed-> Click on Confirm Merge
+ -> we can see Pull Request successfully merged and closed
+ -> Click on Code(Left side Top) to see all the branches. Now the Newfile.txt will be present in main branch as well.
