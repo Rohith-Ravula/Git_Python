@@ -1,0 +1,1 @@
+Newfile should only be visible in the NewBranch
