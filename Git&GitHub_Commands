@@ -37,14 +37,24 @@ git pull origin main
 
 # To make a push requests
 # We can move the files from VScode to GitHub
-# Command to know the current status of our Git. "We can see untracked files"
+# Command to know the current status of our Git. "We can see untracked filesin red color"
 git status 
 # To add the untracked files in VScode to GitHub
 git add .
-# check the status of Git again
+# check the status of Git again (2 files will now be changed to green color)
 git status
 # command to commit the files
 git commit -m "commit message"
-
 # command to push the changes
 git push
+# command to upstream the files
+git push --set-upstream origin main
+We will be asking to authenticate and once we login to GitHub we can see total 3 files
+
+# Command to create a new branch
+git checkout -b "branch name"
+
+# Command to swtich between the branches
+git checkout "branch name"
+
+Note: we can also push files from one branch to another directly from GitHub itself, by using the Pull Request(PR) option present in the GitHub.
