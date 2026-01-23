@@ -72,3 +72,13 @@ eg- a Newfile.txt has been added to a Newbranch, which is not present in main br
  # Command to clone the Git to new folder. (create a new folder in File Explorer, open cmd from the new folder location. Run the below command from cmd)
 git clone https://github.com/Rohith-Ravula/Git_Python.git 
 -> A new folder opens with the GitHub Repository name (Git_Python). All the files and folders will be present inside that new folder within Test folder
+
+# To change the Repository name in Git
+# I am changing my Repo name from Git_Python to Git_GitHub
+-> Got to GitHub-> click on the Repo to be changed-> Settings(Top Right)-> General-> change the name to Git_GitHub
+# Local folder will still points to old name(Git_Python)
+To make the changes or the project cloned on your computer-> Go to the local folder on your PC-> Run cmd from the command and type in below commands.
+--> git remote set-url origin https://github.com/Rohith-Ravula/NewRepoName
+git remote set-url origin https://github.com/Rohith-Ravula/Git_GitHub
+# To test whether everything is cloned and working fine-> use below command
+git remote -v
